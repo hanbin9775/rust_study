@@ -71,7 +71,7 @@ fn value_in_cents(coin: Coin) -> u32 {
 }
 
 fn value_in_cents_with_if(coin: Coin) -> u32 {
-    if let Coin::Quarter = coin {
+    if let Coin::Quarter = coin { // 로직을 표현하는데 match 표현식이 너무 장황하면 if let 표현식 사용
         println!("Quarter");
         25
     } else {
